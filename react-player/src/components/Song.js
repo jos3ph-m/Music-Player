@@ -1,13 +1,15 @@
 import React from 'react';
 
 
-const Player = () => {
+const Song = () => {
   return(
-    <div className="player">
-      <h1>Player</h1>
+    <div className="song-container">
+      <h1>Picture</h1>
+      <h1>Song Name</h1>
+      <h1>Artist</h1>
     </div>
     
   )
 }
 
-export default Player;
+export default Song;
