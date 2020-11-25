@@ -1,4 +1,4 @@
-import { useState } form 'react';
+import { useState } from 'react';
 
 //Import styles
 import "./styles/app.scss";
