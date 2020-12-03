@@ -5,7 +5,7 @@ const LibrarySong = ({ song, songs, audioRef, setCurrentSong, id, isPlaying, set
   const songSelectHandler = () => {
     setCurrentSong(song)
     // Add active state
-    const newSongs = songs.map((map) => {
+    const newSongs = songs.map((song) => {
       if(song.id === id) {
         return {
           ...song, 
