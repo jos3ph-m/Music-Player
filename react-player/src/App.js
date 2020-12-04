@@ -32,6 +32,7 @@ function App() {
 
   return (
     <div className="App">
+      <Nav />
       <Song currentSong={currentSong} />
       <Player audioRef={audioRef} setIsPlaying={setIsPlaying} isPlaying={isPlaying} currentSong={currentSong} setSongInfo={setSongInfo} songInfo={songInfo} />
       <Library songs={songs} audioRef={audioRef} isPlaying={isPlaying} setSongs={setSongs} setCurrentSong={setCurrentSong}/> 
