@@ -30,9 +30,13 @@ const Player = ({ audioRef, currentSong, isPlaying, setIsPlaying, songInfo, setS
   const skipTrackHandler = (direction) => {
     let currentIndex = songs.findIndex((song) => song.id === currentSong.id);
     if(direction === 'skip-forward'){
-      setCurrentSong(songs[currentIndex+1])
-    } else {
-      setCurrentSong(songs[currentIndex-1])
+      setCurrentSong(songs[(currentIndex+1) % songs.length])
+    } 
+    if(direction === "skip-back") {
+      if((currentIndex - 1) % songs.length === -1) {
+        setCurrentSong(songs[songs.length - 1])
+      }
+      setCurrentSong(songs[(currentIndex-1)])
     }
   }
 
