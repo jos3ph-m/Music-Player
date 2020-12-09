@@ -35,6 +35,16 @@
 input[type='range']:focus {
   outline: none;
 }
+
 input[type='range']::-webkit-slider-thumb {
   -webkit-appearance: none;
+  height: 16px;
+  width: 16px;
+  background: black;
+}
+
+.track {
+  background: lightblue;
+  width: 100%;
+  height: 1rem;
 }
