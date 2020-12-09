@@ -50,6 +50,7 @@ input[type='range']::-webkit-slider-thumb {
   height: 1rem;
   position: relative;
   border-radius: 1rem;
+  overflow: hidden;
 }
 
 .animate-track {
@@ -59,4 +60,6 @@ input[type='range']::-webkit-slider-thumb {
   position: absolute;
   top: 0;
   left: 0;
+  transform: translateX(0%);
+  pointer-events: none;
 }
