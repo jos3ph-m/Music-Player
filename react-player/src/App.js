@@ -33,9 +33,9 @@ function App() {
     //Calculate Percentage
     const roundedCurrent = Math.round(current)
     const roundedDuration = Math.round(duration)
-    const animationPercentage = Math.round((roundedCurrent / roundedDuration))
+    const animation = Math.round(roundedCurrent / roundedDuration)
 
-    setSongInfo({...songInfo, currentTime: current, duration })
+    setSongInfo({...songInfo, currentTime: current, duration, animationPercentage:animation })
   }
 
   return (
