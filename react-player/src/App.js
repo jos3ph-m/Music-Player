@@ -30,6 +30,8 @@ function App() {
   const timeUpdateHandler = (e) => {
     const current = e.target.currentTime;
     const duration = e.target.duration;
+    //Calculate Percentage
+    const roundedCurrent = Math.cound(current)
     setSongInfo({...songInfo, currentTime: current, duration })
   }
 
