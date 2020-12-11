@@ -34,6 +34,11 @@ function App() {
     const animation = (current / duration)*100
     setSongInfo({...songInfo, currentTime: current, duration, animationPercentage:animation })
   }
+  const songEndHandler = async () => {
+    let currentIndex = songs.findIndex((song) => song.id === currentSong.id);
+    await setCurrentSong(songs[(currentIndex+1) % songs.length])
+    if(isPlaying) audioRef.current.play();    
+  }
 
   return (
     <div className="App">
